@@ -1,0 +1,147 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+    text-align: center;
+}
+
+.main-container{
+    background-color: #0c0426;
+    display: flex;
+    justify-content: center;
+}
+
+
+.left-container{
+    margin-left: 20px;
+    width: 50%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.left-container h5{
+    margin-bottom: -30px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.left-container h2{
+    font-size: 150px;
+}
+
+span{
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+span p{
+    color: black;
+    animation: blinker 2s linear infinite;
+}
+
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+.right-container{
+    background-image: url(House-New.jpg);
+    height: 100vh;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.countdown{
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .day, .hour, .minute, .second {
+    font-size: 2rem;
+  }
+
+  .address{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+
+
+
+  @media only screen 
+  and (width: 430px) 
+  and (height: 932px) 
+  and (-webkit-device-pixel-ratio: 3) { 
+
+    .main-container{
+        height: 100vh;
+        overflow: hidden;
+        background-color: #0c0426;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    div .left-container{
+        margin-left: 0px;
+    }
+
+    .left-container{
+        width: 100vw;
+        height: 50vh;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .left-container h5{
+        margin-bottom: -10px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .left-container h2{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .address{
+        font-size: 20px;
+    }
+
+
+    .right-container{
+    background-image: url(House-New.jpg);
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+    .day, .hour, .minute, .second {
+        font-size: 1rem;
+      }
+
+  }
+
