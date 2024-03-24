@@ -83,14 +83,7 @@ span p{
     margin-bottom: 20px;
   }
 
-
-
-
-  @media only screen 
-  and (width: 430px) 
-  and (height: 932px) 
-  and (-webkit-device-pixel-ratio: 3) { 
-
+  @media (min-width:320px){
     .main-container{
         height: 100vh;
         overflow: hidden;
@@ -144,4 +137,3 @@ span p{
       }
 
   }
-
